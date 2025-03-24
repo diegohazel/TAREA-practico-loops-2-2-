@@ -8,6 +8,7 @@ int main (){
 string x = "pruebaloco";
 int contador = 0;
 int cantidadLetras = 0;
+int primeraPalabra = 0;
 
 const int mayus1 = 65, mayus2 = 90, minus1 = 97, minus2 = 122, espacio = 32;
 
@@ -24,19 +25,24 @@ const int mayus1 = 65, mayus2 = 90, minus1 = 97, minus2 = 122, espacio = 32;
         letra = x[contador];
        // cout << letra << endl;
 
-        if ((letra >= mayus1 &&  letra <= mayus2) || (letra >= minus1 && letra <= minus2 ) || (letra == espacio) )
+        if ((letra >= mayus1 &&  letra <= mayus2) || (letra >= minus1 && letra <= minus2 || (letra == espacio)) )
         {
             cantidadLetras ++;
-        } else 
+        }else 
         {
             break;
         }
 
-
+        if ((letra == espacio))
+        {
+                primeraPalabra = cantidadLetras;
+        }
 
     }while (contador < 100);
 
-cout << "cantidad de letras es : " << cantidadLetras << endl;
+    cout << "cantidad de letras es : " << cantidadLetras << endl;
+    cout << "La primera palabra es : " << primeraPalabra << endl;
+    
 
 
 return 0;
