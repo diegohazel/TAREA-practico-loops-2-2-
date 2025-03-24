@@ -5,7 +5,7 @@ using namespace std;
 
 int main(){
 
-string x="red pepper";
+string x;
 string word;
 string wordprint = "[";
 char temp = 0;
@@ -14,18 +14,24 @@ int contador = 0;
 
 const int mayus1 = 65, mayus2 = 90, minus1 = 97, minus2 = 122, espacio = 32;
 
-
+do{
 cout << "Ingrese sus dos palabras: "<< endl;
-//getline(cin, palabras);
+getline(cin, x);
+
+if(x[0] == espacio)
+{
+   cout<< "No puedes iniciar tu palara con un espacio, volver a intentar" << endl; 
+}
+}while(x[0] == espacio);
+
 
 do
 {
 temp = x[contador];
 contador++;
-cout << contador << endl;
-word += temp;
 word += temp;
 wordprint += word;
+word = "";  //el bug era que se olvidaba borrar el word xdddd
 if (x[contador] == espacio)
 {
     word += "]";
@@ -39,32 +45,7 @@ if (x[contador] == espacio)
 
 cout << wordprint << endl;
 
-/*do
-{
-    contador ++;
 
-    int letra;
-    letra = x[contador];
-
-    if ((letra >= mayus1 &&  letra <= mayus2) || (letra >= minus1 && letra <= minus2 || (letra == espacio)) )
-    {
-        cantidadLetras ++;
-    }else 
-    {
-        cantidadLetras ++;
-        
-        break;
-    }
-
-    if ((letra == espacio))
-    {
-            primeraPalabra = cantidadLetras;
-    }
-
-}while (contador < 100);
-
-
-*/
 
     return 0;
 }
