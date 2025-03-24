@@ -1,4 +1,6 @@
-# TAREA-practico-loops-2-2- en lenguaje C++
+
+# TAREA-practico-loops-2-2![github-header-image (3)](https://github.com/user-attachments/assets/303b1e77-cbf3-44b0-a6d9-78813532209e)
+
 ## Tarea de Intro a la Programacion del Ingeniero Jose Jesus Cabrera
  
  Estudiante : [Diego Stephan D'Lorenntti Ovando](https://www.instagram.com/hazel.bo/)
