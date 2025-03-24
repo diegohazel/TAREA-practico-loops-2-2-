@@ -22,15 +22,19 @@ do
 {
 temp = x[contador];
 contador++;
+cout << contador << endl;
 word += temp;
+word += temp;
+wordprint += word;
 if (x[contador] == espacio)
 {
     word += "]";
-    wordprint += word;
+   wordprint += word;
     wordprint += "\n";
     word = "";
     wordprint += "[";
-}
+    contador ++;
+}else if(temp == 0){wordprint += "]";}
 }while(temp != 0);
 
 cout << wordprint << endl;
