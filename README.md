@@ -30,5 +30,5 @@ do{
 ## Objetivos de la Tarea
 
 - Practicar Loops en C++
-- Precticar Commits en GIT
+- Practicar Commits en GIT
 - Practicar uso de Repositorios GitHub 
